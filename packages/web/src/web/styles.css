@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+:root {
+  --primary: #FF6B00;
+  --primary-dark: #E55A00;
+  --accent: #0066FF;
+  --accent-dark: #0052CC;
+  --success: #00C853;
+  --warning: #FFD600;
+  --danger: #FF3B30;
+  --bg: #0F0F0F;
+  --bg-card: #1A1A1A;
+  --bg-elevated: #242424;
+  --border: #2E2E2E;
+  --text-primary: #FFFFFF;
+  --text-secondary: #A0A0A0;
+  --text-muted: #606060;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text-primary);
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+}
+
+@layer utilities {
+  .font-display { font-family: 'Poppins', sans-serif; }
+  .bg-card { background-color: var(--bg-card); }
+  .bg-elevated { background-color: var(--bg-elevated); }
+  .text-primary-color { color: var(--primary); }
+  .text-accent { color: var(--accent); }
+  .text-muted-color { color: var(--text-muted); }
+  .border-color { border-color: var(--border); }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
